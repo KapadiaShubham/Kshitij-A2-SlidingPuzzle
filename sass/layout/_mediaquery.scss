@@ -1,0 +1,56 @@
+@media only screen  and (max-width:1024px){
+    .game-grid{
+        margin-top: 25px;
+        grid-gap: 9px;
+    }
+    .game-cell{
+        height: 6rem;
+        width: 6rem;
+    }
+    .x::after{
+        font-size: 6rem;
+    }
+    .x::after{
+        font-size: 7rem;
+    }
+}
+@media only screen  and (max-width:540px){
+    .container{
+        margin:25px;
+        padding: 25px;
+    }
+    /* .game-grid{
+        margin-top: 25px;
+        grid-gap: 25px;
+    } */
+    .game-cell{
+        height: 5rem;
+        width: 5rem;
+    }
+    .x::after{
+        font-size: 5rem;
+    }
+    .o::after{
+        font-size: 6rem;
+    }
+}
+@media only screen  and (max-width:330px){
+    .container{
+        margin:25px;
+        padding: 15px;
+    }
+    .game-grid{
+        /* margin-top: 25px; */
+        grid-gap: 7px;
+    }
+    .game-cell{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    .x::after{
+        font-size: 4.5rem;
+    }
+    .o::after{
+        font-size: 5.5rem;
+    }
+}

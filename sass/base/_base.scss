@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex; /*To put the game box at center of the page*/
+  justify-content: center;
+  color:$color-body;
+  font-family: sans-serif;
+  // background-image:url("../../image/bgimg.jpg");
+  background-size: cover;
+  // height: 500px; /* You must set a specified height */
+  background-position: center;
+  background-repeat: no-repeat;
+//   background-color: #cccccc;
+}

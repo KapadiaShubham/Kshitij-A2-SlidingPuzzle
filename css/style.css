@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  /*To put the game box at center of the page*/
+  justify-content: center;
+  color: #F2EBD3;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.title {
+  text-align: center; }
+  .title span {
+    color: #545454; }
+
+.MandN {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  font-size: 1.35rem;
+  background-color: rgba(0, 255, 255, 0.377);
+  border-radius: 10px;
+  /* height: 32px; */ }
+  .MandN .M-selector,
+  .MandN .N-selector {
+    display: flex;
+    margin: 0.2rem;
+    margin-right: 0.4rem;
+    justify-content: space-between; }
+  .MandN .M,
+  .MandN .N {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #545454;
+    border-radius: 10px; }
+  .MandN .M-value,
+  .MandN .N-value {
+    display: flex; }
+  .MandN .M4,
+  .MandN .M5,
+  .MandN .M3,
+  .MandN .N4,
+  .MandN .N5,
+  .MandN .N3 {
+    padding: 0px 10px;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    margin: 0.2rem;
+    cursor: pointer; }
+    .MandN .M4:hover,
+    .MandN .M5:hover,
+    .MandN .M3:hover,
+    .MandN .N4:hover,
+    .MandN .N5:hover,
+    .MandN .N3:hover {
+      color: blanchedalmond;
+      background-color: rgba(0, 0, 0, 0.534); }
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 1.35rem;
+  justify-content: space-between;
+  /* height: 32px; */ }
+  .status-action-new {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #545454;
+    border-radius: 10px; }
+    .status-action-new:hover {
+      color: #f2ebd3;
+      background-color: #f37070; }
+  .status-action-status {
+    display: flex;
+    border-radius: 10px;
+    background-color: #545454; }
+    .status-action-status .time,
+    .status-action-status .moves {
+      width: 5rem; }
+    .status-action-status .time,
+    .status-action-status .moves {
+      margin: 0 0 0rem 0;
+      padding: 9px 16px 9px 4px; }
+    .status-action-status .time-title,
+    .status-action-status .moves-title {
+      font-size: 15px;
+      text-align: right; }
+    .status-action-status .time-container,
+    .status-action-status .moves-container {
+      text-align: right; }
+
+.status-action-status span {
+  color: #545454; }
+
+.won,
+.won::after {
+  background-color: #f37070 !important; }
+
+.container {
+  margin: 17px 50% auto 50%;
+  padding: 50px;
+  background-color: #14BDAC;
+  border-radius: 25px; }
+  .container::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.034);
+    width: 100%;
+    z-index: 100; }
+
+.game-grid {
+  display: grid;
+  grid-gap: 8px;
+  font-size: 3rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 50px;
+  background-color: #14BDAC; }
+
+#GRID {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+.game-cell {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0DA192;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media only screen and (max-width: 1024px) {
+  .game-grid {
+    margin-top: 25px;
+    grid-gap: 9px; }
+  .game-cell {
+    height: 6rem;
+    width: 6rem; }
+  .x::after {
+    font-size: 6rem; }
+  .x::after {
+    font-size: 7rem; } }
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px; }
+  /* .game-grid{
+        margin-top: 25px;
+        grid-gap: 25px;
+    } */
+  .game-cell {
+    height: 5rem;
+    width: 5rem; }
+  .x::after {
+    font-size: 5rem; }
+  .o::after {
+    font-size: 6rem; } }
+
+@media only screen and (max-width: 330px) {
+  .container {
+    margin: 25px;
+    padding: 15px; }
+  .game-grid {
+    /* margin-top: 25px; */
+    grid-gap: 7px; }
+  .game-cell {
+    height: 4.5rem;
+    width: 4.5rem; }
+  .x::after {
+    font-size: 4.5rem; }
+  .o::after {
+    font-size: 5.5rem; } }
+
+#winner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+
+.win-box {
+  color: #534648;
+  position: relative;
+  z-index: 10000;
+  animation-duration: 0.75s;
+  animation-name: imUdsZ;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 320px;
+  background-color: white;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.24) 0px 15px 12px; }
+
+.winText-flex {
+  display: flex;
+  flex-direction: column;
+  place-content: space-around space-between;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.winText-flex .text-1 {
+  font-family: Pacifico, cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 37px;
+  color: #57407c; }
+
+.win-play-again {
+  font-size: 22px;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  line-height: 60px;
+  text-align: center;
+  background-color: #3d2963;
+  color: white;
+  transition: opacity 0.3s ease 0s; }
+
+.win-BG {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  animation-duration: 0.75s;
+  animation-name: fjoQCp;
+  height: 100%;
+  opacity: 0.3;
+  background: black; }

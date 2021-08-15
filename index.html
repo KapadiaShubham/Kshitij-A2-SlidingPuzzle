@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>15 Puzzle - Sliding Game</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="title">15 <span>Puzzle</span></h1>
+
+        <!-- To select value of m & n -->
+        <div class="MandN">
+            <div class="M-selector">
+                <div class="M">
+                    M</div>
+                <div class="M-value">
+                    <div class="M5">
+                        5
+                    </div>
+                    <div class="M3">
+                        3
+                    </div>
+                    <div class="M4">
+                        4
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="N-selector">
+                <div class="N">
+                    N</div>
+                <div class="N-value">
+                    <div class="N5">
+                        5
+                    </div>
+                    <div class="N3">
+                        3
+                    </div>
+                    <div class="N4">
+                        4
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Status - Time, Moves and NewGame -->
+        <div class="status-action">
+            <div class="status-action-new">New Game</div>
+            <div class="status-action-status">
+                <div class="time">
+                    <div class="time-title">
+                        Time
+                    </div>
+                    <div class="time-container">
+                        0s
+                    </div>
+                </div>
+                <div class="moves">
+                    <div class="moves-title">
+                        Moves
+                    </div>
+                    <div class="moves-container">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Where the game-cells will be added -->
+        <div id="GRID" class="game-grid"> </div>
+
+        <!-- Pause Button -->
+        <div class="pause">
+
+        </div>
+
+        <!-- <div class="game-cell cell1"> </div>
+            <div class="game-cell cell2"> </div>
+            <div class="game-cell cell3"> </div>
+            <div class="game-cell cell4"> </div>
+            <div class="game-cell cell5"> </div>
+            <div class="game-cell cell6"> </div>
+            <div class="game-cell cell7"> </div>
+            <div class="game-cell cell8"> </div>
+            <div class="game-cell cell9"> </div>
+            <div class="game-cell cell10"> </div>
+            <div class="game-cell cell11"> </div>
+            <div class="game-cell cell12"> </div>
+            <div class="game-cell cell13"> </div>
+            <div class="game-cell cell14"> </div>
+            <div class="game-cell cell15"> </div>
+            <div class="game-cell cell16"> </div> -->
+
+
+    </div>
+
+    <!-- After Winning -->
+    <div id="portal">
+        <div>
+            <div id="winner">
+                <div class="win-box">
+                    <div class="winText-flex">
+                        <div class="text-1">Excellent!</div>
+                        <div>It took you <b class='win-moves'>162 moves</b></div>
+                        <div><button type="big" class="win-play-again">Play Again</button></div>
+                    </div>
+                </div>
+                <div class="win-BG"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

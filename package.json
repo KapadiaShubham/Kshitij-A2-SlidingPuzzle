@@ -1,0 +1,14 @@
+{
+  "name": "sliding-puzzle",
+  "version": "1.0.0",
+  "description": "15-puzzle-Game",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "shubham",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

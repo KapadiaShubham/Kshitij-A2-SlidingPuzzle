@@ -1,0 +1,108 @@
+.MandN {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    font-size: $status-fSize;
+    background-color: rgba(0, 255, 255, 0.377);
+    border-radius: $status-action-border-radius;
+    /* height: 32px; */
+    .M-selector,
+    .N-selector {
+        display: flex;
+        margin: 0.2rem;
+        margin-right: 0.4rem;
+        justify-content: space-between;
+    }
+    .M,
+    .N {
+        // cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: $new-button-padding;
+        background-color: $color-whitePaint;
+        border-radius: $status-action-border-radius;
+        // &:hover {
+        //     color: #f2ebd3;
+        //     background-color: $win-color;
+        // }
+    }
+    .M-value,
+    .N-value {
+        display: flex;
+    }
+    .M4,
+    .M5,
+    .M3,
+    .N4,
+    .N5,
+    .N3 {
+        padding: $new-button-padding;
+        background-color: rgba(0, 0, 0, 0.137);
+        border-radius: $status-action-border-radius;
+        margin: 0.2rem;
+        cursor: pointer;
+        &:hover {
+            color: blanchedalmond;
+            background-color: rgba(0, 0, 0, 0.534);
+        }
+    }
+    // &-status {
+    //     display: flex;
+    //     border-radius: $status-action-border-radius;
+    //     background-color: $color-whitePaint;
+    // }
+}
+
+.status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: $status-fSize;
+    justify-content: space-between;
+    /* height: 32px; */
+    &-new {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: $new-button-padding;
+        background-color: $color-whitePaint;
+        border-radius: $status-action-border-radius;
+        &:hover {
+            color: #f2ebd3;
+            background-color: $win-color;
+        }
+    }
+    &-status {
+        display: flex;
+        border-radius: $status-action-border-radius;
+        background-color: $color-whitePaint;
+        .time,
+        .moves {
+            width: 5rem
+        }
+        .time,
+        .moves {
+            margin: 0 0 0rem 0;
+            padding: 9px 16px 9px 4px;
+        }
+        .time-title,
+        .moves-title {
+            font-size: 15px;
+            text-align: right;
+        }
+        .time-container,
+        .moves-container {
+            text-align: right;
+        }
+    }
+}
+
+.status-action-status span {
+    color: $color-whitePaint;
+}
+
+.won,
+.won::after {
+    background-color: $win-color !important;
+    // color: red;
+}

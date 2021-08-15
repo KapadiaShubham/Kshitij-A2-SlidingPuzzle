@@ -1,0 +1,39 @@
+.container {
+    margin: $container-margin;
+    padding: 50px;
+    background-color: $color-primary;
+    border-radius: 25px;
+    &::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.034);
+        width: 100%;
+        z-index: 100;
+    }
+}
+
+.game-grid {
+    display: grid;
+    grid-gap: $grid-gap;
+    font-size: $numFont-Size;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 50px;
+    background-color: $bgcolor-grid;
+}
+
+#GRID {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.game-cell {
+    cursor: pointer;
+    width: $game-cell-width;
+    height: $game-cell-height;
+    // margin:5px;
+    background-color: $color-gamecell;
+    border-radius: $game-cell-borderRadius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
